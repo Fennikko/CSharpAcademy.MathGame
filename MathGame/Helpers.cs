@@ -85,7 +85,7 @@ D - Division
 E - Show Everything
 Q - Quit to Main Menu");
             Console.WriteLine("-------------------------------------------------------");
-            var historySelection = Console.ReadLine().Trim().ToUpper();
+            var historySelection = Console.ReadLine()?.Trim().ToUpper();
             if (string.IsNullOrWhiteSpace(historySelection))
             {
                 Console.WriteLine("Invalid selection, press any key to try again");

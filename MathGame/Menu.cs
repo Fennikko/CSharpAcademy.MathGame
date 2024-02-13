@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-
-namespace MathGame;
-using Models;
+﻿namespace MathGame;
 
 public class Menu
 {
@@ -25,7 +22,7 @@ M - Multiplication
 D - Division
 Q - Quit");
             Console.WriteLine("-------------------------------------------------------");
-            var gameSelection = Console.ReadLine().Trim().ToUpper();
+            var gameSelection = Console.ReadLine()?.Trim().ToUpper();
             if (string.IsNullOrWhiteSpace(gameSelection))
             {
                 Console.WriteLine("Invalid selection, press any key to try again");
