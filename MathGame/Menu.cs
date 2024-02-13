@@ -41,19 +41,19 @@ Q - Quit");
                     Console.Clear();
                     break;
                 case "A":
-                    Console.WriteLine("AdditionGame");
+                    GameEngine.AdditionGame("AdditionGame");
                     Console.Clear();
                     break;
                 case "S":
-                    Console.WriteLine("Subtraction Game");
+                    GameEngine.SubtractionGame("Subtraction Game");
                     Console.Clear();
                     break;
                 case "M":
-                    Console.WriteLine("Multiplication Game");
+                    GameEngine.MultiplicationGame("Multiplication Game");
                     Console.Clear();
                     break;
                 case "D":
-                    Console.WriteLine("Division Game");
+                    GameEngine.DivisionGame("Division Game");
                     Console.Clear();
                     break;
                 case "Q":
