@@ -35,6 +35,7 @@ public class GameEngine
             Console.WriteLine($"Game Over! Your score was: {score}pts. Press any key to return to the main menu.");
             Console.ReadKey();
         }
+        Helpers.AddToHistory(score, GameType.Addition);
     }
 
     public static void SubtractionGame(string message)
@@ -71,6 +72,7 @@ public class GameEngine
             Console.WriteLine($"Game Over! Your score was: {score}pts. Press any key to return to the main menu.");
             Console.ReadKey();
         }
+        Helpers.AddToHistory(score, GameType.Subtraction);
     }
 
     public static void MultiplicationGame(string message)
@@ -107,6 +109,7 @@ public class GameEngine
             Console.WriteLine($"Game Over! Your score was: {score}pts. Press any key to return to the main menu.");
             Console.ReadKey();
         }
+        Helpers.AddToHistory(score,GameType.Multiplication);
     }
 
     public static void DivisionGame(string message)
@@ -142,5 +145,7 @@ public class GameEngine
             Console.WriteLine($"Game Over! Your score was: {score}pts. Press any key to return to the Main Menu");
             Console.ReadKey();
         }
+        Helpers.AddToHistory(score, GameType.Division);
     }
+    
 }

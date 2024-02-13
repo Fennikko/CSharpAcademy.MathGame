@@ -37,7 +37,7 @@ Q - Quit");
             switch (gameSelection)
             {
                 case "V":
-                    Console.WriteLine("Game history");
+                    Helpers.PrintGames();
                     Console.Clear();
                     break;
                 case "A":
