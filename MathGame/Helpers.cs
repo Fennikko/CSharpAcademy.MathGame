@@ -2,6 +2,10 @@
 using Models;
 public class Helpers
 {
+    public static List<Game> Games = 
+    [
+
+    ];
     public static string GetName()
     {
         Console.Write("Please Enter your name: ");
@@ -42,5 +46,20 @@ public class Helpers
         result[0] = firstNumber;
         result[1] = secondNumber;
         return result;
+    }
+
+    public static void AddToHistory(int gameScore, GameType gameType)
+    {
+        Games.Add(new Game
+        {
+            Date = DateTime.Now,
+            Score = gameScore,
+            Type = gameType
+        });
+    }
+
+    public static void PrintGames()
+    {
+
     }
 }
